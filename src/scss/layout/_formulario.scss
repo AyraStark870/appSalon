@@ -1,0 +1,29 @@
+.formulario{
+  width: 100%;
+  .campo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    label{
+      flex: 0 0 10rem;//10 rem es su base porque recibe 0 mientras el input recibe 1
+      color: $blanco;
+    }
+    input{
+      flex:1 ;
+      padding: $separacion/4;
+      border-radius: 1rem;
+      border: none;
+    }
+
+  }
+}
+.alerta{
+  padding: $separacion/2;
+  color: $blanco;
+  text-align: center;
+  width: 100%;
+  display: block;
+  &.error{
+    background-color: rgb(194, 0, 0);
+  }
+}
